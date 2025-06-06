@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+/* Importa a fonte 'Cabin' do Google Fonts, com variações de peso de 400 a 700 e opções itálicas */
+
+* {
+    margin: 0; /* Remove todas as margens padrão dos elementos */
+    padding: 0; /* Remove todos os espaçamentos internos padrão (padding) dos elementos */
+    box-sizing: border-box; /* Define o comportamento da caixa do elemento para incluir bordas e padding dentro do tamanho total do elemento (width e height) */
+}
+
+body {
+    background-color: rgb(255, 255, 255); /* Define uma cor de fundo suave para o corpo da página */
+    color: rgb(43, 91, 132); /* Define a cor do texto */
+    font-family: "Cabin", sans-serif; /* Aplica a fonte "Cabin" (importada), com "sans-serif" como fallback(fonte reserva */
+    font-weight: 400; /* Define o peso da fonte como 400, que é o peso padrão (normal) */
+}
+
+header {
+    padding: 2rem;
+    background-color: rgb(43, 91, 132);
+    color: yellow;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: flex; /* Ativa o Flexbox, um modelo de layout que facilita o alinhamento e a distribuição de espaço entre os elementos filhos do container (neste caso, dentro da seção 'main'). Flexbox permite organizar os elementos de maneira flexível. */
+    flex-direction: column; /* Define a direção em que os elementos filhos serão dispostos. 'column' faz com que os itens sejam empilhados verticalmente, ou seja, um embaixo do outro. 
+    Se fosse 'row', os itens seriam organizados horizontalmente, lado a lado. */
+    gap: 1.5rem; /* Adiciona um espaçamento de 2 rem (20px aproximadamente) entre os elementos filhos dentro do container Flexbox (a seção 'main'). Isso cria um espaço consistente entre os itens, sem a necessidade de usar margens individuais nos elementos. */
+}
+
+section {
+    display: flex; /* Define que os elementos dentro do 'section' serão exibidos com layout flexível. */
+    flex-direction: column; /* Alinha os elementos em uma coluna vertical. */
+    gap: 1rem; /* Define um espaçamento de 1rem entre os elementos filhos. */
+}
+
+h2 {
+    color: #092664; /* Define a cor do texto de 'h2' para um tom de azul. */
+    font-size: 1.2rem; /* Define o tamanho da fonte de 'h2' para 1.2rem. */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: yellow; /* Define a cor de destaque de itens 'radio' e 'checkbox' como amarela. */
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    width: 100%; /* Ajusta a largura do campo para ocupar todo o espaço do elemento pai. */
+    padding: 0.6rem; /* Adiciona um espaçamento interno de 0.6rem. */
+    border: 2px solid rgb(43, 91, 132); /* Define uma borda de 2px com cor azul. */
+    outline: none; /* Remove o contorno padrão do navegador ao focar no campo. */
+    border-radius: 5px; /* Adiciona bordas arredondadas com raio de 5px. */
+    background-color: transparent; /* Torna o fundo do campo transparente. */
+}
+
+input::placeholder {
+    color: rgb(73, 95, 117); /* Define a cor do texto do placeholder em cinza azulado. */
+}
+
+/* Estilo para o elemento <select> */
+select{
+    cursor: pointer; /* Altera o cursor para "pointer" ao passar sobre o select, indicando que é clicável */
+    background-color: rgb(48, 108, 161); /* Define a cor de fundo do select */
+    color: yellow; /* Define a cor do texto como amarelo */
+    border-radius: 5px; /* Arredonda as bordas do select */
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno ao focar no elemento */
+}
+
+/* Estilo para o elemento <img> */
+img{
+    width: 5rem; /* Define a largura da imagem como 5 rem (unidade relativa) */
+    border-radius: 5px; /* Arredonda as bordas da imagem */
+}
+
+/* Estilo para o elemento <table> */
+table{
+    width: 100%; /* Faz a tabela ocupar toda a largura do container */
+    border-collapse: collapse; /* Remove espaços entre as bordas das células da tabela */
+}
+
+/* Estilo para o cabeçalho das tabelas <th> */
+th{
+    background-color: rgb(43, 91, 132); /* Define a cor de fundo do cabeçalho */
+    color: yellow; /* Define a cor do texto do cabeçalho como amarelo */
+    padding: 0.5rem; /* Adiciona um preenchimento interno ao cabeçalho */
+}
+
+/* Estilo para as células das tabelas <td> */
+td{
+    color: #092664; /* Define a cor do texto nas células */
+    padding: 1rem; /* Adiciona um preenchimento interno para as células */
+    text-align: center; /* Alinha o texto das células ao centro */
+}
+
+/* Estilo para as células do rodapé <tfoot td> */
+tfoot td{
+    background-color: rgb(255, 255, 127); /* Define a cor de fundo das células do rodapé */
+    color: rgb(43, 91, 132); /* Define a cor do texto das células do rodapé */
+    padding-right: 1.5rem; /* Adiciona um preenchimento interno à direita nas células do rodapé */
+}
+
+/* Estilo para o elemento <details> */
+details{
+    background-color: rgb(255, 255, 127); /* Define a cor de fundo do details */
+    border-radius: 5px; /* Arredonda as bordas do details */
+    padding: 1rem; /* Adiciona um preenchimento interno ao details */
+}
+
+/* Estilo para o elemento <summary> */
+summary{
+    color: rgb(24, 67, 105); /* Define a cor do texto do summary */
+    margin: 0.5rem; /* Adiciona uma margem ao redor do summary */
+    cursor: pointer; /* Altera o cursor para "pointer" ao passar sobre o summary */
+}
+
+/* Estilo para listas ordenadas <ol> */
+ol{
+    margin-left: 1.5rem; /* Adiciona uma margem à esquerda das listas */
+}
+
+/* Estilo para cada item das listas ordenadas <ol li> */
+ol li{
+    padding: 0.5rem; /* Adiciona um preenchimento interno para cada item da lista */
+}
+
+fieldset{
+    border: 2px #092664 solid;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend{
+    color: #fdf900;
+    background-color: #092664;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+
+textarea{
+    background-color: rgb(255, 255, 127);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #092664;
+    width: 50%;
+}
+
+button{
+    background-color: #092664 ;
+    color: #fdf900;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(24, 67, 105);
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer{
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fdf900;
+}
